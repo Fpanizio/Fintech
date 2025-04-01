@@ -1,5 +1,5 @@
 import React from "react";
-import DataRange from "./DataRange";
+import DataRange from "../DataRange/DataRange";
 
 const Header = () => {
   return (

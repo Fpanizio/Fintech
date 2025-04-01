@@ -1,5 +1,5 @@
-import Header from "./Components/Header";
-import Sidenav from "./Components/Sidenav";
+import Header from "./Components/Header/Header";
+import Sidenav from "./Components/Sidenav/Sidenav";
 import { DataContextProvider } from "./Context/DataContext";
 import Resumo from "./pages/Resumo";
 import "./Style.css";
@@ -7,7 +7,7 @@ import "./Style.css";
 function App() {
   return (
     <DataContextProvider>
-      <div>
+      <div className="container">
         <Sidenav />
         <main>
           <Header />
