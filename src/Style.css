@@ -98,26 +98,27 @@ ul {
   border-radius: var(--gap);
 }
 
-.sidenav li a{
+.sidenav li a {
   flex: 1;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   text-decoration: none;
   color: var(--color-1);
-  padding: var(--gap-s);
+  padding: var(--gap-s) 0;
 }
 
 .sidenav li:hover span {
   background: var(--color-3);
 }
 
-/* dateRange */
-.dateRange{
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: var(--gap);
+/* daterange */
+
+.daterange {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
 }
 
-/* Resumo */
+/* resumo */
 
 .resumo {
   font-size: 1.5rem;
@@ -130,9 +131,9 @@ gap: var(--gap);
   color: var(--color-1);
 }
 
-/* Sales */
+/* venda */
 
-.sale {
+.venda {
   display: grid;
   grid-template-columns: auto auto 1fr;
   gap: var(--gap);
@@ -140,11 +141,11 @@ gap: var(--gap);
   align-items: center;
 }
 
-.sale div:last-child {
+.venda div:last-child {
   justify-self: end;
 }
 
-.sale a {
+.venda a {
   text-decoration: none;
   color: inherit;
 }

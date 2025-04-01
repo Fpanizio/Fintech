@@ -1,8 +1,8 @@
 import { IVenda } from "../Context/DataContext";
 
-const ItemSale = ({ venda }: { venda: IVenda }) => {
+const VendaItem = ({ venda }: { venda: IVenda }) => {
   return (
-    <div className="sale box">
+    <div className="venda box">
       <a href="" style={{ fontFamily: "monospace" }}>
         {venda.id}
       </a>
@@ -17,4 +17,4 @@ const ItemSale = ({ venda }: { venda: IVenda }) => {
   );
 };
 
-export default ItemSale;
+export default VendaItem;

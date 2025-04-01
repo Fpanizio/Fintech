@@ -1,8 +1,8 @@
-import React from "react";
 import { useData } from "../Context/DataContext";
 
 const Resumo = () => {
   const { data } = useData();
+
   if (data === null) return null;
   return (
     <section>
@@ -11,7 +11,7 @@ const Resumo = () => {
           <h2>Vendas</h2>
           <span>
             {data
-              .filter((item) => item.status !== "falha")
+              .filter((i) => i.status !== "falha")
               .reduce((acc, item) => acc + item.preco, 0)
               .toLocaleString("pt-br", { style: "currency", currency: "BRL" })}
           </span>
@@ -20,7 +20,7 @@ const Resumo = () => {
           <h2>Recebido</h2>
           <span>
             {data
-              .filter((item) => item.status === "pago")
+              .filter((i) => i.status === "pago")
               .reduce((acc, item) => acc + item.preco, 0)
               .toLocaleString("pt-br", { style: "currency", currency: "BRL" })}
           </span>
@@ -29,7 +29,7 @@ const Resumo = () => {
           <h2>Processando</h2>
           <span>
             {data
-              .filter((item) => item.status === "processando")
+              .filter((i) => i.status === "processando")
               .reduce((acc, item) => acc + item.preco, 0)
               .toLocaleString("pt-br", { style: "currency", currency: "BRL" })}
           </span>
