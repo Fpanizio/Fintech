@@ -3,22 +3,21 @@ html {
   --color-2: #66593c;
   --color-3: #eceadd;
   --color-4: #f7f8f5;
-  --color-5: #fff;
-
+  --color-5: #ffffff;
   --gap-s: 0.625rem;
-  --gap-m: 1.25rem;
+  --gap: 1.25rem;
 }
 
 body {
-  font-family: "sans-serif";
+  font-family: sans-serif;
   margin: 0px;
   color: var(--color-2);
   background: var(--color-4);
 }
 
 .box {
-  padding: var(--gap-m);
-  border-radius: var(--gap-m);
+  padding: var(--gap);
+  border-radius: var(--gap);
   background: var(--color-5);
 }
 
@@ -43,7 +42,7 @@ ul {
 
 .flex {
   display: flex;
-  gap: var(--gap-m);
+  gap: var(--gap);
 }
 
 .flex > * {
@@ -51,27 +50,31 @@ ul {
 }
 
 .mb {
-  margin-bottom: var(--gap-m);
+  margin-bottom: var(--gap);
 }
 
 .bg-1 {
   background: var(--color-1);
 }
+
 .bg-2 {
   background: var(--color-2);
 }
+
 .bg-3 {
   background: var(--color-3);
 }
+
 .bg-4 {
   background: var(--color-4);
 }
+
 .bg-5 {
   background: var(--color-5);
 }
 
 .container {
   display: grid;
-  padding: var(--gap-m);
-  gap: var(--gap-m);
+  padding: var(--gap);
+  gap: var(--gap);
 }

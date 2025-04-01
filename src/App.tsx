@@ -1,7 +1,7 @@
-import Header from "./Components/Header/Header";
-import Sidenav from "./Components/Sidenav/Sidenav";
+import Header from "./Components/Header";
+import Sidenav from "./Components/Sidenav";
 import { DataContextProvider } from "./Context/DataContext";
-import Resumo from "./pages/Resumo";
+import Resumo from "./Pages/Resumo";
 import "./Style.css";
 
 function App() {
