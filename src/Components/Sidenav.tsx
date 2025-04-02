@@ -6,8 +6,21 @@ import contato from "../assets/icons/contato.svg";
 import sair from "../assets/icons/sair.svg";
 import FintechSVG from "../assets/FintechSVG";
 import { NavLink } from "react-router-dom";
+import React from "react";
 
 const Sidenav = () => {
+  const toggleDarkMode = () => {
+    const isDarkMode = document.documentElement.classList.toggle("dark-mode");
+    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+  };
+
+  React.useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      document.documentElement.classList.add("dark-mode");
+    }
+  }, []);
+
   return (
     <nav className="sidenav box bg-3">
       <FintechSVG title="Fintech Logo" />
@@ -34,7 +47,9 @@ const Sidenav = () => {
           <span>
             <img src={configuracoes} alt="" />
           </span>
-          <a>Configurações</a>
+          <a onClick={toggleDarkMode} style={{ cursor: "pointer" }}>
+            Alternar Tema
+          </a>
         </li>
         <li>
           <span>

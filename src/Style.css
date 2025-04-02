@@ -1,11 +1,33 @@
+/* Light Mode */
 html {
+  --line-pago: #a36af9; /* Cor da linha "pago" */
+  --line-processando: #fbcb21; /* Cor da linha "processando" */
+  --line-falha: #000000; /* Cor da linha "falha" */
+
   --color-1: #463220;
   --color-2: #66593c;
   --color-3: #eceadd;
   --color-4: #f7f8f5;
   --color-5: #ffffff;
+
   --gap-s: 0.625rem;
   --gap: 1.25rem;
+
+  width: 100%;
+  height: 100vh;
+}
+
+/* Dark Mode */
+html.dark-mode {
+  --line-pago: #6a4cf9; /* Cor da linha "pago" no dark mode */
+  --line-processando: #d1a621; /* Cor da linha "processando" no dark mode */
+  --line-falha: #ffffff; /* Cor da linha "falha" no dark mode */
+
+  --color-1: #ffffff;
+  --color-2: #d1d1d1;
+  --color-3: #3a3a3a;
+  --color-4: #2a2a2a;
+  --color-5: #1a1a1a;
 }
 
 body {
@@ -13,12 +35,20 @@ body {
   margin: 0px;
   color: var(--color-2);
   background: var(--color-4);
+  width: inherit;
+  height: inherit;
+
+  /* Transição suave */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .box {
   padding: var(--gap);
   border-radius: var(--gap);
   background: var(--color-5);
+
+  /* Transição suave */
+  transition: background-color 0.3s ease;
 }
 
 button {
@@ -32,6 +62,9 @@ h2,
 h3 {
   font-weight: 600;
   margin: 0px;
+
+  /* Transição suave */
+  transition: color 0.3s ease;
 }
 
 ul {
@@ -96,6 +129,9 @@ ul {
   align-items: center;
   justify-content: center;
   border-radius: var(--gap);
+
+  /* Transição suave */
+  transition: background-color 0.3s ease;
 }
 
 .sidenav li a {
@@ -105,6 +141,9 @@ ul {
   margin: 0.25rem 0;
   color: var(--color-1);
   padding: var(--gap-s) 0;
+
+  /* Transição suave */
+  transition: color 0.3s ease;
 }
 
 .sidenav li:hover span {
