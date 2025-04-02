@@ -45,17 +45,17 @@ const Sidenav = () => {
         </li>
         <li>
           <span>
+            <img src={contato} alt="" />
+          </span>
+          <a>Contato</a>
+        </li>
+        <li>
+          <span>
             <img src={configuracoes} alt="" />
           </span>
           <a onClick={toggleDarkMode} style={{ cursor: "pointer" }}>
             Alternar Tema
           </a>
-        </li>
-        <li>
-          <span>
-            <img src={contato} alt="" />
-          </span>
-          <a>Contato</a>
         </li>
         <li>
           <span>

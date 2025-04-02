@@ -39,7 +39,7 @@ body {
   height: inherit;
 
   /* Transição suave */
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.7s ease, color 0.7s ease;
 }
 
 .box {
@@ -48,7 +48,7 @@ body {
   background: var(--color-5);
 
   /* Transição suave */
-  transition: background-color 0.3s ease;
+  transition: background-color 0.7s ease;
 }
 
 button {
@@ -64,7 +64,7 @@ h3 {
   margin: 0px;
 
   /* Transição suave */
-  transition: color 0.3s ease;
+  transition: color 0.7s ease;
 }
 
 ul {
@@ -131,7 +131,7 @@ ul {
   border-radius: var(--gap);
 
   /* Transição suave */
-  transition: background-color 0.3s ease;
+  transition: background-color 0.7s ease;
 }
 
 .sidenav li a {
@@ -143,7 +143,7 @@ ul {
   padding: var(--gap-s) 0;
 
   /* Transição suave */
-  transition: color 0.3s ease;
+  transition: color 0.7s ease;
 }
 
 .sidenav li:hover span {
